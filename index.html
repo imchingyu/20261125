@@ -1,0 +1,16 @@
+<!DOCTYPE html> <!-- 使用 HTML5 文件格式 -->
+<html lang="zh-Hant"> <!-- 指定繁體中文頁面語系 -->
+  <head> <!-- 設定頁面中繼資料與載入資源 -->
+    <meta charset="utf-8" /> <!-- 使用 UTF-8 編碼支援繁體中文 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 讓畫面適應不同裝置寬度 -->
+    <meta name="theme-color" content="#a9dce6"> <!-- 設定瀏覽器介面主題色 -->
+    <title>海灣公共服務島 | SKY PIER</title> <!-- 設定瀏覽器分頁標題 -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- 載入場景與介面的樣式 -->
+    <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script> <!-- 透過 importmap 載入 three.js 0.160 -->
+    <script src="libraries/p5.min.js"></script> <!-- 載入 p5.js 作為介面與操作工具 -->
+  </head> <!-- 結束頁面中繼資料設定 -->
+  <body> <!-- 開始顯示 3D 場景與操作介面 -->
+    <main id="scene" aria-label="海灣校園與公共服務浮島"></main> <!-- 放置 three.js 3D 畫布 -->
+    <script type="module" src="sketch.js"></script> <!-- 載入 Three.js 場景與 p5.js 介面程式 -->
+  </body> <!-- 結束頁面內容 -->
+</html> <!-- 結束 HTML 文件 -->

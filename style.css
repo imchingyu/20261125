@@ -1,0 +1,24 @@
+html, body { /* 讓頁面完整佔滿瀏覽器畫面 */
+  width: 100%; /* 設定頁面寬度填滿視窗 */
+  height: 100%; /* 設定頁面高度填滿視窗 */
+  margin: 0; /* 移除瀏覽器預設外距 */
+  padding: 0; /* 移除瀏覽器預設內距 */
+  overflow: hidden; /* 避免畫布外出現捲動條 */
+  background: #a9dce6; /* 設定水面風格的淡藍底色 */
+} /* 結束頁面尺寸設定 */
+#scene { /* 定位 Three.js 主場景容器 */
+  position: fixed; /* 讓場景固定填滿整個視窗 */
+  inset: 0; /* 將容器四邊貼齊視窗邊緣 */
+  z-index: 0; /* 將 3D 場景放在介面下方 */
+} /* 結束場景容器設定 */
+#scene canvas { /* 設定 Three.js 渲染畫布 */
+  display: block; /* 移除畫布的行內基線空隙 */
+  width: 100%; /* 讓畫布填滿容器寬度 */
+  height: 100%; /* 讓畫布填滿容器高度 */
+} /* 結束 Three.js 畫布設定 */
+#scene canvas.p5Canvas { /* 設定 p5.js 介面畫布 */
+  position: fixed; /* 將介面畫布固定在視窗上方 */
+  inset: 0; /* 讓介面畫布覆蓋整個視窗 */
+  z-index: 1; /* 將介面畫布放在 3D 場景上方 */
+  display: block; /* 移除畫布的行內基線空隙 */
+} /* 結束 p5.js 介面畫布設定 */
